@@ -11,14 +11,14 @@ import com.back_sync.models.User;
 
 
 @SpringBootApplication
-public class AvitoBackgroundSyncApplication {
+public class BackgroundSyncApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AvitoBackgroundSyncApplication.class, args);
+		SpringApplication.run(BackgroundSyncApplication.class, args);
 	}
 	
 	// Comment after first run, or remove this completely and add the test data directly to the database.
-	@Bean
+	/*@Bean
 	CommandLineRunner start(UserRepository user_repo) {
 		return args -> {
 			user_repo.deleteAll();
@@ -34,5 +34,5 @@ public class AvitoBackgroundSyncApplication {
 			
 			
 		};
-	}
+	}*/
 }
